@@ -13,6 +13,13 @@
   }
 }
 
+@font-face {
+  font-family: 'Colus';
+  src: url('/Colus-Regular.woff2') format('woff2'); 
+  /* Update the path accordingly */
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +43,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  font-family: 'Colus', Arial, sans-serif;
+}
+
