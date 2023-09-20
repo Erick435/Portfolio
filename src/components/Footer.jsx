@@ -2,7 +2,7 @@
 import React from 'react';
 
 function Footer() {
-  return <div>Projects Content Here</div>;
+  return <div>Footer Content Here</div>;
 }
 
 export default Footer;

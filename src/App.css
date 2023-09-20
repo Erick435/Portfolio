@@ -13,14 +13,15 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Colus';
-  src: url('/Colus-Regular.woff2') format('woff2'); 
-  /* Update the path accordingly */
-}
+  src: url('./fonts/Colus-Regular.woff2') format('woff2'); 
+} */
 
 
-.App-header {
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -29,7 +30,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -45,7 +46,34 @@
 }
 
 
-body {
-  font-family: 'Colus', Arial, sans-serif;
+
+
+/* ------------------------ STYLING FOR MASTER CONTROL BUTTONS --------------- */
+.master-controls button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.master-controls button:focus {
+  outline: none;
+}
+
+.master-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.master-controls.hide-controls button {
+  transform: translateY(70px);
+}

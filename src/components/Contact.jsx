@@ -2,7 +2,7 @@
 import React from 'react';
 
 function Contact() {
-  return <div>Projects Content Here</div>;
+  return <div>Contact Content Here</div>;
 }
 
 export default Contact;
